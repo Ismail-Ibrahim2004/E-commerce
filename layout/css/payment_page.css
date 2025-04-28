@@ -1,0 +1,195 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding-top: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f4;
+  margin-top: 90px;
+}
+
+.payment-container {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 140px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #92e3a9;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fafee1;
+  border-radius: 20px;
+  border: 1px solid #6d977d;
+}
+
+.payment-form {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-header h3 {
+  font-size: 20px;
+}
+
+.secure-server {
+  font-size: 14px;
+  color: gray;
+}
+
+.payment-method {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.payment-method input[type="radio"] {
+  margin-right: 10px;
+}
+
+.payment-method .description {
+  font-size: 14px;
+  color: #6d977d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.details-form .form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.details-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.payment-illustration {
+  flex: 1;
+  background: #6d977d;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-illustration img {
+  width: 73%;
+}
+
+.done-button {
+  padding: 15px 90px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background: #c1e9ce;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.done-button:hover {
+  background: #f9f9f9;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .form-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .payment-form,
+  .payment-illustration {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .payment-illustration img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .details-form .form-group {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .details-form input {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .done-button {
+    padding: 10px 50px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .payment-illustration img {
+    width: 100%;
+  }
+
+  .done-button {
+    padding: 8px 40px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,86 @@
+<?php include 'includes/templates/header.php'; ?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home_page</title>
+    <link rel="shortcut icon" href="layout/img/home_img/Asset 2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="layout/css/home_css/home_pagee.css">
+    <link rel="stylesheet" href="layout/css/footer.css">
+    <link rel="stylesheet" href="layout/css/slide_cart.css">
+    <link rel="stylesheet" href="layout/css/about.css">
+    <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="layout/js/slide_cart.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navigator Section -->
+    <header>
+      
+    </header>
+    <!-- Last Line in Navigator-->
+
+    <div class="book">
+      <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe"
+    src="https://heyzine.com/flip-book/1505dca8d4.html" style="border: 0px; width: 100%; height: 600px;"></iframe>
+    </div>
+
+    <!-- Content Section of Home Page -->
+    <!-- Last Line in Content Section -->
+
+    <!-- Slide Cart -->
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Company Column  -->
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="">about us</a></li>
+              <li><a href="">our services</a></li>
+              <li><a href="">privacy policy</a></li>
+              <li><a href="">affiliate program</a></li>
+            </ul>
+          </div>
+          <!-- Help Column -->
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">shipping</a></li>
+              <li><a href="">returns</a></li>
+              <li><a href="">order status</a></li>
+              <li><a href="">payment options</a></li>
+            </ul>
+          </div>
+          <!-- Online-Shop Column -->
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">watch</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">dress</a></li>
+            </ul>
+          </div>
+          <!-- Social Column -->
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

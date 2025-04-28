@@ -1,0 +1,204 @@
+/* Reset Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  padding-top: 65px;
+  background-color: #f9f9f4;
+}
+
+h1 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 100px;
+  color: #000000;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.37px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #f9faf3;
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 23%; /* عرض المنتج بالنسبة للحاوية */
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 241px; /* عرض ثابت للصورة */
+  height: 192px; /* ارتفاع ثابت للصورة */
+  top: 254px;
+  left: 765px;
+  /* object-fit: cover; لضمان احتواء الصورة دون تشوه */
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-card .rating {
+  color: #f3bd8d;
+  margin-bottom: 5px;
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #92e3a9;
+}
+
+.product-card .old-price {
+  font-size: 14px;
+  color: #000000;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+.product-card .discount {
+  color: #f3bd8d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-card .delivery {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-card .delivery strong {
+  color: #000;
+}
+
+.Fulfilled {
+  color: #6d977d;
+}
+
+.add-to-cart {
+  background-color: #6d977d;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049;
+}
+.add-to-cart-btn {
+  background-color: #6d977d;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #45a049;
+}
+
+.button_Next {
+  background-color: #6d977d;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 20px auto;
+  text-align: center;
+  display: block;
+}
+
+.button_Next:hover {
+  color: #fff;
+  font-size: larger;
+  transition: 0.5s;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.page-container {
+  background-color: #ffffff;
+  border: 2px solid #9f9191;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .product-card {
+    width: 45%; /* عرض المنتج نصف الشاشة */
+  }
+
+  .button_Next {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%; /* عرض المنتج يغطي كامل الشاشة */
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .button_Next {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+
+  .add-to-cart,
+  .button_Next {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .product-card img {
+    width: 250px; /* نفس عرض الصورة على كل الأجهزة */
+    height: 192px; /* نفس ارتفاع الصورة */
+  }
+}

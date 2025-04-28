@@ -1,0 +1,22 @@
+.book {
+  margin-top: 62px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .book {
+    margin-top: 50px; /* تقليل المسافة للشاشات الكبيرة */
+  }
+}
+
+@media (max-width: 768px) {
+  .book {
+    margin-top: 40px; /* تقليل المسافة أكثر للأجهزة اللوحية */
+  }
+}
+
+@media (max-width: 480px) {
+  .book {
+    margin-top: 30px; /* مسافة صغيرة جدًا للهواتف الصغيرة */
+  }
+}

@@ -1,0 +1,216 @@
+body{
+    background-color: #C1E3D6;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+    gap: 20px; 
+  }
+  
+  .formBox{
+    margin-top: 80px;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    border-top-Right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    
+  }
+  .header{
+    font-weight: 200;
+    font-size: 20px;
+    padding-top: 1px;
+    text-align: center;
+  }
+  .caption{
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  
+  input
+  {
+    padding-left: 12px;
+    font-weight: 300px;
+    font-family: karla;
+    font-size:18px;
+    width: 480px;
+    height: 55px;
+    margin-top: 30px; 
+    margin-left: 40px;
+    border-radius:10px 10px 10px 10px;
+    border: 1.53px solid #0000001A;
+    opacity: 20;
+  }
+  
+  .Register{
+    margin-top: 36px;
+    margin-left: 200px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #F6FBF9;
+    background-color:#84C7AE ;
+    width: 180px;
+    height: 42px;
+    border-bottom-right-radius: 44px;
+    border-top-left-radius: 44px;
+    border: #84C7AE;
+  }
+  
+  .Register:hover{
+    background-color: #177250;
+    font-size: 24px;
+    transition:0.3s;
+    cursor: pointer;
+  }
+  
+  .forget {
+    text-decoration: none;
+    color: #84C7AE;
+    font-family: karla;
+    font-weight: 600;
+    padding-left: 230px;
+  
+  }
+  .forget:hover{
+    text-decoration: none;
+    color: #177250;
+    font-family: karla;
+    font-weight: 600;
+    padding-left: 230px;
+  
+  }
+  
+  
+  .infoBox{
+    width: 350px;
+    height: 550px;
+    background-color: #6D977D;
+    border-top-left-radius: 50px;
+    border-top-Right-radius: 50px;
+    margin-top: 300px;
+  }
+  
+  .pargraph{
+    position: relative;
+    top: -110px;
+    width: 300px;
+    height: 50px;
+    padding-left: 22px;
+    font-size: 24px;
+    word-spacing: 5px;
+    text-align: center;
+    color:#F6FBF9;
+  }
+  .img{
+    scale: 70%;
+    position: relative;
+    left: -50px;
+    top: -120px;
+  }
+  
+  .message {
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+  }  
+  
+  .error-message {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+  }  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column; /* جعل العناصر عمودية عند الشاشات المتوسطة */
+      align-items: center;
+    }
+  
+    .formBox {
+      width: 500px;
+      height: auto;
+      margin-top: 50px;
+    }
+  
+    input {
+      width: 90%;
+      margin: 10px auto;
+      display: block;
+    }
+  
+    .Register {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .formBox {
+      width: 90%;
+      height: auto;
+    }
+  
+    .infoBox {
+      width: 80%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .pargraph {
+      font-size: 20px;
+    }
+  
+    input {
+      width: 100%;
+    }
+  
+    .Register {
+      font-size: 18px;
+      width: 150px;
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      font-size: 18px;
+    }
+  
+    .caption {
+      font-size: 16px;
+    }
+  
+    .pargraph {
+      font-size: 16px;
+      width: 90%;
+    }
+  
+    input {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    .Register {
+      width: 140px;
+      height: 38px;
+      font-size: 16px;
+    }
+  
+    .forget {
+      padding-left: 0;
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+    }
+  
+    .img {
+      left: 0;
+      top: 0;
+      scale: 50%;
+    }
+  }

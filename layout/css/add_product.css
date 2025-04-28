@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+      to bottom,
+      #c1e3d6 0%,
+      #c1e3d6 25%,
+      #6d977d 25%,
+      #6d977d 75%,
+      #c1e3d6 75%,
+      #c1e3d6 100%
+  );
+}
+
+
+.add-product-form {
+  background-color: #f6fbf9;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  box-sizing: border-box;
+}
+
+.add-product-form h2 {
+  text-align: center;
+  color: #212b27;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1.5px solid #2c563c;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  outline: none;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #84c7ae;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+}
+
+.submit-button:hover {
+  background-color: #2c563c;
+}
+
+.label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #32403b;
+  font-size: 14px;
+}
+
+
+/* .add-product-container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+
+.add-product-container {
+  width: 450px; /* أو الحجم اللي انت عايزه للبوكس */
+  margin: 50px auto 0 auto; /* عشان يبقى في النص */
+  background-color: #f9f9f9;
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  width: 500px; /* نفس عرض الكونتينر */
+  margin: 10px auto 0 auto; /* نخليه سنتر زيه */
+  text-align: left; /* لكن النص جوه يكون شمال */
+}
+
+.back-button a {
+  display: inline-block;
+  background-color: #6d977d;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #557b64;
+  transform: scale(1.05);
+}
