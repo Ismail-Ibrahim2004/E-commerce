@@ -23,8 +23,7 @@
     <!-- Last Line in Navigator-->
 
     <div class="book">
-      <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe"
-    src="https://heyzine.com/flip-book/1505dca8d4.html" style="border: 0px; width: 100%; height: 600px;"></iframe>
+    <iframe allowfullscreen="" scrolling="no" class="fp-iframe" style="border: 1px solid lightgray; width: 100%; height: 400px;" src="https://heyzine.com/flip-book/ded48abf3c.html"></iframe>
     </div>
 
     <!-- Content Section of Home Page -->
