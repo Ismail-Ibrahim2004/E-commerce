@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] != 'admin') {
 
 // تحقق من وجود ID في الرابط
 if (!isset($_GET['id'])) {
-    header("Location: admin_dashboard.php");
+    header("Location: dashboard.php");
     exit();
 }
 

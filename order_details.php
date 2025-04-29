@@ -42,7 +42,75 @@ $result = $stmt->get_result();
   <meta charset="UTF-8">
   <title>Order Details</title>
   <link rel="shortcut icon" href="layout/img/home_img/Asset 2.png" type="image/x-icon" />
-  <link rel="stylesheet" href="layout/css/order_details.css">
+  <style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f0f4f8;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 32px;
+        color:rgb(123, 190, 117);
+    }
+
+    table {
+        width: 90%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    th {
+        background-color:rgb(96, 136, 95);
+        color: white;
+        font-weight: 600;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #dff0ff;
+    }
+
+    a.view-link {
+        color:rgb(78, 151, 109);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a.view-link:hover {
+        text-decoration: underline;
+    }
+
+    .back-link {
+        /* display: block; */
+        margin: 30px auto 0;
+        text-align: center;
+        font-size: 18px;
+        text-decoration: none;
+        color:rgb(34, 109, 19);
+        border-radius: 15px;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+        
+    }
+</style>
 </head>
 <body>
 
@@ -85,7 +153,7 @@ $result = $stmt->get_result();
 
 <br>
 <div style="text-align:center;">
-    <a href="my_orders.php">⬅ Back to My Orders</a>
+    <a class="view-link " href="my_orders.php">⬅ Back to My Orders</a>
 </div>
 
 </body>

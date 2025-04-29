@@ -17,7 +17,7 @@ h1 {
     text-align: center;
     margin-left: 300px;
 
-    margin: 0;
+    /* margin: 0; */
     font-size: 40px;
     color: #84C7AE;
 }
@@ -26,8 +26,9 @@ h1 {
     text-align: center;
     height: 72px;
     font-size: 20px;
+    padding: 5px;
     margin-left: 300px;
-    margin-top: 30px;
+    margin-top: 10px;
     line-height: 25px;
     color: #000000;
 }
@@ -36,7 +37,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 20px 20px 120px 20px;
+    margin: 20px 20px 150px 20px;
     gap: 40px;
 }
 

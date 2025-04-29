@@ -15,6 +15,8 @@ session_start();
     <link rel="stylesheet" href="../../layout/js/slide_cart.js">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <link href="../../layout/css/home_css/all.min.css" rel="stylesheet">
 </head>
 

@@ -19,6 +19,7 @@ if (!isset($_SESSION['user_id'])) {
     <link rel="stylesheet" href="layout/css/home_css/home_pagee.css">
     <link rel="stylesheet" href="layout/css/footer.css">
     <link rel="stylesheet" href="layout/css/slide_cart.css">
+    
 
     <link rel="stylesheet" type="text/css"href="layout/css/home_css/all.min.css">
     <script src="layout/js/slide_cart.js" defer></script>
@@ -49,3 +50,4 @@ if (!isset($_SESSION['user_id'])) {
   
 
 <?php require_once 'includes/templates/footer.php'; ?>
+</body>

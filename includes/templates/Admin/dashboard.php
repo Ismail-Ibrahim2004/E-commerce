@@ -48,7 +48,7 @@ if (!empty($search)) {
 
     <div class="tabs">
         <div class="tab"><a href="view_users.php"><button class="active">View Users</button></a></div>
-        <div class="tab"><a href="view_messages.php"><button class="active">View Contact Messages</button></a></div>
+        <div class="tab"><a href="view_messages.php"><button class="active">User's complaint</button></a></div>
         <div class="tab"><a href="admin_view_orders.php"><button class="active">View Orders</button></a></div>
     </div>
     
