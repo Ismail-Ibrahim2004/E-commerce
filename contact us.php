@@ -4,28 +4,33 @@ session_start();
 
 $messageSent = "";
 
-// استلام البيانات عند إرسال النموذج
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstName = trim($_POST["FirstName"]);
-    $lastName = trim($_POST["LastName"]);
-    $email = trim($_POST["Email"]);
-    $phone = trim($_POST["PhoneNumber"]);
-    $msg = trim($_POST["Message"]);
+    // استلام البيانات وتأمينها
+    $firstName = htmlspecialchars(trim($_POST["FirstName"] ?? ''));
+    $lastName = htmlspecialchars(trim($_POST["LastName"] ?? ''));
+    $email = htmlspecialchars(trim($_POST["Email"] ?? ''));
+    $phone = htmlspecialchars(trim($_POST["PhoneNumber"] ?? ''));
+    $msg = htmlspecialchars(trim($_POST["Message"] ?? ''));
 
-    // إعداد الاستعلام لتخزين الرسالة في قاعدة البيانات
-    $stmt = $conn->prepare("INSERT INTO contact_messages (first_name, last_name, email, phone, message) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssss", $firstName, $lastName, $email, $phone, $msg);
+    $name = $firstName . ' ' . $lastName;
 
-    if ($stmt->execute()) {
-        $messageSent = "تم إرسال رسالتك بنجاح! سنقوم بالرد عليك قريبًا.";
+    // تحقق أن الحقول ليست فارغة
+    if ($name && $email && $msg) {
+        $stmt = $conn->prepare("INSERT INTO contact_messages (name, email, phone, message) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss", $name, $email, $phone, $msg);
+
+        if ($stmt->execute()) {
+            $messageSent = "✅ تم إرسال رسالتك بنجاح! سنقوم بالرد عليك قريبًا.";
+        } else {
+            $messageSent = "❌ حدث خطأ أثناء إرسال الرسالة. حاول مرة أخرى.";
+        }
+
+        $stmt->close();
     } else {
-        $messageSent = "حدث خطأ أثناء إرسال الرسالة. حاول مرة أخرى.";
+        $messageSent = "❗ من فضلك املأ جميع الحقول المطلوبة.";
     }
-
-    $stmt->close();
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

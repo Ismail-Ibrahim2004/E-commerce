@@ -13,16 +13,17 @@ $search = isset($_GET['search']) ? trim($_GET['search']) : "";
 
 if (!empty($search)) {
     $stmt = $conn->prepare("SELECT * FROM contact_messages 
-        WHERE first_name LIKE ? OR last_name LIKE ? OR email LIKE ? OR message LIKE ?
+        WHERE name LIKE ? OR email LIKE ? OR message LIKE ?
         ORDER BY created_at DESC");
     $likeSearch = "%$search%";
-    $stmt->bind_param("ssss", $likeSearch, $likeSearch, $likeSearch, $likeSearch);
+    $stmt->bind_param("sss", $likeSearch, $likeSearch, $likeSearch);
     $stmt->execute();
     $result = $stmt->get_result();
     $stmt->close();
 } else {
     $result = $conn->query("SELECT * FROM contact_messages ORDER BY created_at DESC");
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -64,7 +65,7 @@ if (!empty($search)) {
             <?php while ($row = $result->fetch_assoc()): ?>
             <tr>
                 <td><?= $row['id'] ?></td>
-                <td><?= htmlspecialchars($row['first_name'] . ' ' . $row['last_name']) ?></td>
+                <td><?= htmlspecialchars($row['name']) ?></td>
                 <td><?= htmlspecialchars($row['email']) ?></td>
                 <td><?= nl2br(htmlspecialchars($row['message'])) ?></td>
                 <td><?= $row['created_at'] ?></td>
